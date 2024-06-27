@@ -159,7 +159,7 @@
     }
 
     .user-top-list li {
-        background-image: url(https://img-home.csdnimg.cn/images/20210112062443.png) !important
+        background-image: url(https://picture.gptkong.com/20240625/004798e3b810084c71b2e8b2c0cddea299.png) !important
     }
 
     .comment-num,
@@ -206,3 +206,26 @@
         top: -85px;
         left: 109px
     }
+    .user-top-list a{position: relative}
+.user-top-list a::after {
+        content:' ';
+        position: absolute;
+background-size:cover;
+        background:url(https://picture.gptkong.com/20240627/213216054973924a24b73b1b4cd5aae87b.png);
+        width: 14%;
+        height:91%;
+        top: 2px;
+        left:256px
+    }
+
+
+
+    .introduction-fold span{color:red!important;font-family:KaiTi!important}
+    .user-general-info-join-csdn span,.user-profile-wrapper-box pan,.user-profile-title,.user-profile-wrapper-box span,.user-profile-sub-title{color: red!important;
+        font-weight: bold!important;
+        font-size: 17px!important;}
+
+    .show-more-introduction-fold{  
+        color: #0016FF!important}
+
+    .user-general-info-join-csdn > span:first-child,.user-profile-wrapper-box span,.user-profile-wrapper-box span{color:#F4FF00!important}

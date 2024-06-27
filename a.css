@@ -190,7 +190,7 @@
     .user-profile-avatar::after {
         position: absolute;
         content: ' ';
-        background: url(https://picture.gptkong.com/20240626/2203a336938ff749f0ad211b21ffb82a4d.png);
+        background: url(https://github.com/Zhouxin3185/csdn/blob/main/bd9df4b175e09a01df43848e0e3847488f2b8599113d28-0S4n1p.png?raw=trueg);
         background-size: cover;
         width: 210%;
         height: 210%;
@@ -258,4 +258,122 @@ li.sub-second-list-li{
 .nav-li-num[data-v-bb5f5e3e] {
     font-size: 20px!important;
     color: #00FFDE!important;
+}
+.a1 {
+    top: 15px;
+    position: fixed;
+    pointer-events: none;
+}
+.j1 {
+    width: 120px;
+    height: 90px;
+    margin: 50px;
+    background: rgba(216, 0, 15, .8);
+    -webkit-transform-origin: 50% -100px;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    box-shadow: -5px 5px 50px 4px #fa6c00;
+    
+}
+ 
+.c1 {
+    width: 100px;
+    margin: 12px 8px 8px 8px;
+    
+}
+.i1,.c1,.b1,.j1{
+    border-radius: 50%;
+}
+.c1,.b1{
+    border: 2px solid #dc8f03;
+    height: 90px;
+
+}
+.b1 {
+    width: 60px;
+    margin: -4px 8px 8px 20px;
+    
+}
+
+.d1 {
+    top: -65px;
+    left: 60px;
+    width: 2px;
+    height: 65px;
+}
+.i1 , .d1 {
+    background: #dc8f03;
+}
+.i1 , .d1 , .z1,.h1,.j1::before{
+    position: absolute;
+}
+.j1 , .g1{
+    position: relative;
+}
+.g1 {
+    
+    width: 5px;
+    height: 20px;
+    margin: -5px 0 0 59px;
+    -webkit-animation: swing 3s infinite ease-in-out;
+    -webkit-transform-origin: 50% -45px;
+}
+.N1{
+    -webkit-animation: swing 2s infinite ease-in-out;
+}
+.g1,.h1{
+    background: orange;
+    border-radius: 0 0 5px 5px
+}
+
+.i1 {
+    
+    top: 14px;
+    height: 10px;
+    
+}
+.i1 , .h1{
+    left: -2px;
+    width: 10px;
+}
+.h1 {
+    top: 18px;
+    height: 35px;
+}
+
+.j1:before {
+    
+    top: -7px;
+    left: 29px;
+    height: 12px;
+    width: 60px;
+    content: " ";
+    display: block;
+    border-radius: 5px 5px 0 0;
+    border: solid 1px #dc8f03;
+    background: linear-gradient(to right, #dc8f03, orange, #dc8f03, orange, #dc8f03)
+}
+
+.e1{
+    font-size: 3.5rem;
+    color: #F8FF00;
+    font-weight: 700;
+    line-height: 95px;
+    text-align: center;
+    font-family: 华文行楷;
+}
+
+@-webkit-keyframes swing {
+    0% {
+        -webkit-transform: rotate(-15deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(15deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(-15deg)
+    }
+    
+     
 }

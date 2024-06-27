@@ -12,7 +12,7 @@
 
     #userSkin.skin-ai {
         background: url(https://github.com/Zhouxin3185/csdn/blob/main/espaco.jpg?raw=true) no-repeat 0 0;
-        background-size: cover;
+        background-size: 100%;
         background-attachment: fixed
     }
     @keyframes loop {
@@ -202,7 +202,7 @@
     }
 
     .aside-common-box-achievement li:nth-child(4) i {
-        background-image: url(https://github.com/Zhouxin3185/csdn/blob/main/guangruan.jpg?raw=true) !important
+        background-image: url(https://github.com/Zhouxin3185/csdn/blob/main/%E5%85%8D%E6%8A%A0%E5%9B%BE%E7%89%87_1719246393510.png?raw=true) !important
     }
 
     .aside-common-box-achievement li:nth-child(5) i {
@@ -251,7 +251,7 @@
         content: "欢迎来到小Z的博客!";
         font-family: FZShuTi;
         font-size: 100px;
-        color: #D26FFF;
+        color: #00FFE6;
         font-weight: bold;
         width: 2000px;
         top: -85px;
@@ -877,4 +877,133 @@ li.sub-second-list-li{
 		-webkit-transform: rotate(405deg);
 		transform: rotate(405deg);
 	}
+}
+.wrap {
+    width:100px;
+    height: 100px;
+    margin: 150px;
+    position: relative;
+    top:90px;
+    left:100px;
+}
+
+/*包裹所有容器样式*/
+.cube {
+  width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-80deg);
+    animation: rotate linear 20s infinite;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube div {
+    position: absolute;
+    width:200px;
+    height: 200px;
+    opacity: 0.8;
+    transition: all .4s;
+}
+
+/*定义所有图片样式*/
+.pic {
+  width:200px;
+    height: 200px;
+}
+
+.cube .out_front {
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube .out_back {
+    transform: translateZ(-100px) rotateY(180deg);
+}
+
+.cube .out_left {
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.cube .out_right {
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube .out_top {
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube .out_bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+/*定义小正方体样式*/
+.cube span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.cube .in_pic {
+  width:  100px;
+    height: 100px;
+}
+
+.cube .in_front {
+    transform: rotateY(0deg) translateZ(50px);
+}
+
+.cube .in_back {
+    transform: translateZ(-50px) rotateY(180deg);
+}
+
+.cube .in_left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.cube .in_right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.cube .in_top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.cube .in_bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+/*鼠标移入后样式*/
+.cube:hover .out_front {
+    transform: rotateY(0deg) translateZ(200px);
+}
+
+.cube:hover .out_back {
+    transform: translateZ(-200px) rotateY(180deg);
+}
+
+.cube:hover .out_left {
+    transform: rotateY(-90deg) translateZ(200px);
+}
+
+.cube:hover .out_right {
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.cube:hover .out_top {
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.cube:hover .out_bottom {
+    transform: rotateX(-90deg) translateZ(200px);
 }

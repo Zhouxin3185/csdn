@@ -12,7 +12,7 @@
 
     #userSkin.skin-ai {
         background: url(https://github.com/Zhouxin3185/csdn/blob/main/espaco.jpg?raw=true) no-repeat 0 0;
-        background-size: 100%;
+        background-size: cover;
         background-attachment: fixed
     }
     @keyframes loop {
@@ -210,7 +210,7 @@
     }
 
     .user-top-list li {
-        background-image: url(https://picture.gptkong.com/20240625/004798e3b810084c71b2e8b2c0cddea299.png) !important
+        background-image: url(https://github.com/Zhouxin3185/csdn/blob/main/QQ%E6%88%AA%E5%9B%BE20240628032536.png?raw=true) !important
     }
 
     .comment-num,
@@ -242,21 +242,7 @@
         left: -55px
     }
 
-    .user-profile-head-name-vip {
-        position: relative;
-    }
 
-    .user-profile-head-name-vip::after {
-        position: absolute;
-        content: "欢迎来到小Z的博客!";
-        font-family: FZShuTi;
-        font-size: 100px;
-        color: #00FFE6;
-        font-weight: bold;
-        width: 2000px;
-        top: -85px;
-        left: 109px
-    }
     .user-top-list a{position: relative}
 .user-top-list a::after {
         content:' ';
@@ -878,132 +864,232 @@ li.sub-second-list-li{
 		transform: rotate(405deg);
 	}
 }
+
+.fg {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MV Boli", cursive;
+}
+.fg2 {
+    position: absolute;
+    width: 2000px;
+    top: 38px;
+    left: 267px;
+    display: inline-block;
+    color: transparent;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 5vw;
+}
+
+.fg2 span {
+    animation: LetterColor 3s linear infinite;
+    animation-delay: calc(0.1s * var(--o));
+}
+@keyframes LetterColor {
+    0% {
+        color: #fff;
+        text-shadow: 
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 400px #00b3ff;
+        filter: blur(2px) hue-rotate(0deg);
+    }
+    30%,
+    70% {
+        color: #fff;
+        /* 减少光晕大小 */
+        text-shadow: 
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 200px #00b3ff;
+        /* 色调变换360度 */
+        filter: blur(2px) hue-rotate(360deg);
+    }
+    100% {
+        /* 动画结束字变透明 */
+        color: transparent;
+        /* 动画结束消除阴影 */
+        text-shadow: none;
+        /* 动画结束色调重置 */
+        filter: blur(2px) hue-rotate(0deg);
+    }
+}
+
 .wrap {
     width:100px;
-    height: 100px;
-    margin: 150px;
-    position: relative;
-    top:90px;
-    left:100px;
+   height: 100px;
+   margin: 150px;
+   position: absolute;
+   z-index:999999
 }
 
 /*包裹所有容器样式*/
 .cube {
-  width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    transform-style: preserve-3d;
-    transform: rotateX(-30deg) rotateY(-80deg);
-    animation: rotate linear 20s infinite;
+ width: 50px;
+   height: 50px;
+   margin: 0 auto;
+   transform-style: preserve-3d;
+   transform: rotateX(-30deg) rotateY(-80deg);
+   animation: rotate linear 20s infinite;
 }
 
 @-webkit-keyframes rotate {
-    from {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-    to {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
+   from {
+       transform: rotateX(0deg) rotateY(0deg);
+   }
+   to {
+       transform: rotateX(360deg) rotateY(360deg);
+   }
 }
 
 .cube div {
-    position: absolute;
-    width:200px;
-    height: 200px;
-    opacity: 0.8;
-    transition: all .4s;
+   position: absolute;
+   width:200px;
+   height: 200px;
+   opacity: 0.8;
+   transition: all .4s;
 }
 
 /*定义所有图片样式*/
 .pic {
-  width:200px;
-    height: 200px;
+ width:200px;
+   height: 200px;
 }
 
 .cube .out_front {
-    transform: rotateY(0deg) translateZ(100px);
+   transform: rotateY(0deg) translateZ(100px);
 }
 
 .cube .out_back {
-    transform: translateZ(-100px) rotateY(180deg);
+   transform: translateZ(-100px) rotateY(180deg);
 }
 
 .cube .out_left {
-    transform: rotateY(-90deg) translateZ(100px);
+   transform: rotateY(-90deg) translateZ(100px);
 }
 
 .cube .out_right {
-    transform: rotateY(90deg) translateZ(100px);
+   transform: rotateY(90deg) translateZ(100px);
 }
 
 .cube .out_top {
-    transform: rotateX(90deg) translateZ(100px);
+   transform: rotateX(90deg) translateZ(100px);
 }
 
 .cube .out_bottom {
-    transform: rotateX(-90deg) translateZ(100px);
+   transform: rotateX(-90deg) translateZ(100px);
 }
 
 /*定义小正方体样式*/
 .cube span {
-    display: block;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
+   display: block;
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 50px;
+   left: 50px;
 }
 
 .cube .in_pic {
-  width:  100px;
-    height: 100px;
+ width:  100px;
+   height: 100px;
 }
 
 .cube .in_front {
-    transform: rotateY(0deg) translateZ(50px);
+   transform: rotateY(0deg) translateZ(50px);
 }
 
 .cube .in_back {
-    transform: translateZ(-50px) rotateY(180deg);
+   transform: translateZ(-50px) rotateY(180deg);
 }
 
 .cube .in_left {
-    transform: rotateY(-90deg) translateZ(50px);
+   transform: rotateY(-90deg) translateZ(50px);
 }
 
 .cube .in_right {
-    transform: rotateY(90deg) translateZ(50px);
+   transform: rotateY(90deg) translateZ(50px);
 }
 
 .cube .in_top {
-    transform: rotateX(90deg) translateZ(50px);
+   transform: rotateX(90deg) translateZ(50px);
 }
 
 .cube .in_bottom {
-    transform: rotateX(-90deg) translateZ(50px);
+   transform: rotateX(-90deg) translateZ(50px);
 }
 
 /*鼠标移入后样式*/
 .cube:hover .out_front {
-    transform: rotateY(0deg) translateZ(200px);
+   transform: rotateY(0deg) translateZ(200px);
 }
 
 .cube:hover .out_back {
-    transform: translateZ(-200px) rotateY(180deg);
+   transform: translateZ(-200px) rotateY(180deg);
 }
 
 .cube:hover .out_left {
-    transform: rotateY(-90deg) translateZ(200px);
+   transform: rotateY(-90deg) translateZ(200px);
 }
 
 .cube:hover .out_right {
-    transform: rotateY(90deg) translateZ(200px);
+   transform: rotateY(90deg) translateZ(200px);
 }
 
 .cube:hover .out_top {
-    transform: rotateX(90deg) translateZ(200px);
+   transform: rotateX(90deg) translateZ(200px);
 }
 
 .cube:hover .out_bottom {
-    transform: rotateX(-90deg) translateZ(200px);
+   transform: rotateX(-90deg) translateZ(200px);
 }
+.satic-area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/poster-about.jpg) no-repeat center;
+    background-size: cover;
+  }
+  
+  .dynamic-area1   {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/poster-drop-animate2.png) repeat-x 0px 0px;
+    background-size: cover;
+    animation: posterDrop1 6000s linear infinite;
+  }
+  
+  @keyframes posterDrop1 {
+    from { background-position: 0 0; }
+    to { background-position: 4000% 0; }
+  }
+  
+  .dynamic-area2   {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/poster-drop-animate1.png) repeat-x 0px 0px;
+    background-size: cover;
+    animation: posterDrop2 8000s linear infinite;
+  }
+  
+  @keyframes posterDrop2 {
+    from { background-position: 0 0; }
+    to { background-position: 30000% 0; }
+  }

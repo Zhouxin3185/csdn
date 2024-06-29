@@ -190,7 +190,7 @@
     }
 
     .aside-common-box-achievement li:first-child i {
-        background-image: url(https://picture.gptkong.com/20240620/1615443ae4ce9d407facabf2bd0557c45c.png) !important
+        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/guohui-removebg-preview.png) !important
     }
 
     .aside-common-box-achievement li:nth-child(2) i {
@@ -202,15 +202,15 @@
     }
 
     .aside-common-box-achievement li:nth-child(4) i {
-        background-image: url(https://github.com/Zhouxin3185/csdn/blob/main/%E5%85%8D%E6%8A%A0%E5%9B%BE%E7%89%87_1719246393510.png?raw=true) !important
+        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/%E5%85%8D%E6%8A%A0%E5%9B%BE%E7%89%87_1719246393510.png)!important
     }
 
     .aside-common-box-achievement li:nth-child(5) i {
-        background-image: url(https://github.com/Zhouxin3185/csdn/blob/main/QQ%E6%88%AA%E5%9B%BE20240626150627.png?raw=true) !important
+        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20240627213141.png) !important
     }
 
     .user-top-list li {
-        background-image: url(https://github.com/Zhouxin3185/csdn/blob/main/QQ%E6%88%AA%E5%9B%BE20240628032536.png?raw=true) !important
+        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20240628032536.png) !important
     }
 
     .comment-num,
@@ -248,7 +248,7 @@
         content:' ';
         position: absolute;
 background-size:cover;
-        background:url(https://github.com/Zhouxin3185/csdn/blob/main/QQ%E6%88%AA%E5%9B%BE20240627213141.png?raw=true);
+        background:url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20240627213141.png);
         width: 14%;
         height:91%;
         top: 2px;
@@ -923,6 +923,72 @@ li.sub-second-list-li{
         text-shadow: none;
         /* 动画结束色调重置 */
         filter: blur(2px) hue-rotate(0deg);
+    }
+}
+
+.container{
+    position: absolute;
+    left: -300%;
+    top: -77%;
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.qq{
+    font-family: FZShuTi;
+    font-size: 10em;
+    filter: blur(2px);
+    color: #fff;
+    animation: animate 2.5s linear infinite;
+}
+.qq:nth-child(1){
+    animation-delay: 0s;
+}
+.qq:nth-child(2){
+    animation-delay: 0.25s;
+}
+.qq:nth-child(3){
+    animation-delay: 0.5s;
+}
+.qq:nth-child(4){
+    animation-delay: 0.75s;
+}
+.qq:nth-child(5){
+    animation-delay: 1s;
+}
+.qq:nth-child(6){
+    animation-delay: 1.25s;
+}
+.qq:nth-child(7){
+    animation-delay: 1.5s;
+}
+.qq:nth-child(8){
+    animation-delay: 1.75s;
+}
+.qq:nth-child(9){
+    animation-delay: 2s;
+}
+
+@keyframes animate{
+    0%,100%{
+        filter: blur(2px);
+        color: #fff;
+        text-shadow: 0 0 10px #1e90ff,
+        0 0 20px #1e90ff,  
+        0 0 30px #1e90ff,  
+        0 0 40px #1e90ff,        
+        0 0 100px #1e90ff,  
+        0 0 200px #1e90ff,  
+        0 0 300px #1e90ff,  
+        0 0 400px #1e90ff;
+    }
+    5%,95%{
+        filter: blur(0px);
+        color: #666;
+        text-shadow: none;
     }
 }
 

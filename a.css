@@ -11,7 +11,7 @@
     }
 
     #userSkin.skin-ai {
-        background: url(https://media1.giphy.com/media/VzSZDKBQMvCuExqTAE/giphy.gif?cid=ecf05e47ge0ux9x425jmekhd0ngunpyhpuaa1wm9ax9vna3c&ep=v1_gifs_gifId&rid=giphy.gif&ct=g) no-repeat 0 0;
+        background: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/156C4565089698ADE732F7444757EAFA%5B00h00m00s-00h00m17s%5D.gif) no-repeat 0 0;
         background-size: cover;
         background-attachment: fixed
     }
@@ -29,7 +29,7 @@
   
       .earth {
         /* 背景图片在水平方向平铺*/
-        background: url(https://github.com/Zhouxin3185/csdn/blob/main/terra.jpg?raw=true) repeat-x 0 0;
+        background: url(https://img.picui.cn/free/2024/06/29/667fdd6aac963.jpg) repeat-x 0 0;
         /*形成圆边效果，视觉效果更好，当然也可以不用*/
         border: 1px solid rgba(26, 18, 101, 0.3);
         /*使地球形成圆形效果*/
@@ -190,8 +190,7 @@
     }
 
     .aside-common-box-achievement li:first-child i {
-        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/guohui-removebg-preview.png) !important
-    }
+        background-image: url(https://img.picui.cn/free/2024/06/29/667f7c374f838.png)!important}
 
     .aside-common-box-achievement li:nth-child(2) i {
         background-image: url(https://userblink.csdnimg.cn/direct/8024c1a120d04f80bb02d5ad7ad7d821.png) !important
@@ -202,15 +201,15 @@
     }
 
     .aside-common-box-achievement li:nth-child(4) i {
-        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/%E5%85%8D%E6%8A%A0%E5%9B%BE%E7%89%87_1719246393510.png)!important
+        background-image: url(https://img.picui.cn/free/2024/06/29/667f7c369081a.png)!important
     }
 
     .aside-common-box-achievement li:nth-child(5) i {
-        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20240627213141.png) !important
+        background-image: url(https://img.picui.cn/free/2024/06/29/667f7c36848cc.png) !important
     }
 
     .user-top-list li {
-        background-image: url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20240628032536.png) !important
+        background-image: url(https://img.picui.cn/free/2024/06/29/667f7c3673a11.png) !important
     }
 
     .comment-num,
@@ -234,7 +233,7 @@
     .user-profile-avatar::after {
         position: absolute;
         content: ' ';
-        background: url(https://github.com/Zhouxin3185/csdn/blob/main/bd9df4b175e09a01df43848e0e3847488f2b8599113d28-0S4n1p.png?raw=trueg);
+        background: url(https://github.com/Zhouxin3185/csdn/blob/main/bd9df4b175e09a01df43848e0e3847488f2b8599113d28-0S4n1p.png?raw=true);
         background-size: cover;
         width: 210%;
         height: 210%;
@@ -248,7 +247,7 @@
         content:' ';
         position: absolute;
 background-size:cover;
-        background:url(https://csdn-z.oss-cn-shanghai.aliyuncs.com/QQ%E6%88%AA%E5%9B%BE20240627213141.png);
+        background:url(https://img.picui.cn/free/2024/06/29/667f7c36848cc.png);
         width: 14%;
         height:91%;
         top: 2px;
@@ -264,7 +263,7 @@ background-size:cover;
     font-family: FZShuTi!important;}
 
     .show-more-introduction-fold{  
-        color: #0016FF!important}
+        color: orange!important}
 
     .user-general-info-join-csdn > span:first-child,.user-profile-wrapper-box span,.user-profile-wrapper-box span{color:#F4FF00!important}
     .aside-common-box-more {
@@ -408,8 +407,8 @@ li.sub-second-list-li{
 }
 .earth {
     position: absolute;
-    left: -428px;
-    top: 626px;
+    left: -162%;
+    top: 264%;
 }
 .a11{
     left: -1%;
@@ -928,8 +927,8 @@ li.sub-second-list-li{
 
 .container{
     position: absolute;
-    left: -300%;
-    top: -77%;
+    left: -283%;
+    top: -71%;
     width: 100%;
     height: 55vh;
     display: flex;
@@ -992,3 +991,7 @@ li.sub-second-list-li{
     }
 }
 
+.text ,.blog_extension_card_cont_r span{
+    color: #00FFFD !important;
+    font-weight: bold;
+}
